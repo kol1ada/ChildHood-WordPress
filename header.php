@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>World of Childhood</title>
+		<title><?php bloginfo('name'); echo " | "; bloginfo('description')?></title>
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -25,10 +25,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-11 col-sm-12 col-md-12 col-lg-3">
-                        <a href="#" class="header__logo">
-                            <img src="<?php echo bloginfo("template_url");?>/assets/img/icons/svg/logo.svg" alt="World of Childhood" class="header__logo-img">
-                            <div class="header__logo-text">World of Childhood</div>
-                        </a>
+                        <div class="header__logo">
+                            <?php the_custom_logo(); ?>
+                        </div>
                     </div>
                     <div class="col-md-12 col-lg-9 offset-lg-0 col-xl-7 offset-xl-2 ">
                         <div class="header__contacts">

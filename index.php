@@ -78,9 +78,9 @@
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1 class="title underlined">About the company</h1>
+                        <h1 class="title underlined"><?php bloginfo('name') ?></h1>
                         <div class="about__text">
-                        Our company has been giving positive emotions to children and their parents for more than ten years. We make all children's dreams come true and help parents give them a happy childhood!
+                            Our company has been giving positive emotions to children and their parents for more than ten years. We make all children's dreams come true and help parents give them a happy childhood!
                             <br> <br>
                             But even adults sometimes need children's emotions so much! We can do that too, because it's so nice to feel cared for even when you're over... :)
                         </div>
