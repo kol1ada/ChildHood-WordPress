@@ -74,15 +74,13 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1">
                         <div class="about__img">
-                            <img src="<?php echo bloginfo("template_url");?>/assets/img/about.jpg" alt="About the company">
+                            <img src="<?php the_field('about_img', 2); ?>" alt="About the company">
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1 class="title underlined"><?php bloginfo('name') ?></h1>
+                        <h1 class="title underlined"><?php the_field('about_title', 2); ?></h1>
                         <div class="about__text">
-                            Our company has been giving positive emotions to children and their parents for more than ten years. We make all children's dreams come true and help parents give them a happy childhood!
-                            <br> <br>
-                            But even adults sometimes need children's emotions so much! We can do that too, because it's so nice to feel cared for even when you're over... :)
+                            <?php the_field('about_descr', 2); ?>
                         </div>
                         <a href="#" class="button">Learn more</a>
                     </div>
@@ -94,7 +92,7 @@
                 <div class="title">Our team</div>
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <img class="specialists__img" src="<?php echo bloginfo("template_url");?>/assets/img/team.jpg" alt="our team">
+                        <img class="specialists__img" src="<?php the_field('about_team', 2); ?>" alt="our team">
                     </div>
                 </div>
             </div>
@@ -190,7 +188,7 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="toys__alert">
-                            <span>Didn't find what you were looking for?</span> Contact us and we'll be happy to create any toy you want. You can choose everything: size, material, shapes...!
+                            <span><?php the_field('promotion', 2); ?></span> <?php the_field('promotion_descr', 2); ?>
                         </div>
                     </div>
                 </div>
@@ -199,16 +197,14 @@
 
         <div class="aboutus" id="aboutus">
             <div class="container">
-                <h1 class="title">Our Story</h1>
+                <h1 class="title"><?php the_field('stoty_title', 2)?></h1>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subtitle">
-                            It all started with a desire to
+                            <?php the_field('stoty_h3', 2)?>
                         </div>
                         <div class="aboutus__text">
-                            The desire to make as many children as possible happy. It was from this idea that everything started.
-                            <br><br>
-                            The first handmade toys were the classic teddy bears, which sold out so quickly that we were inundated with orders for months to come. It was at that time that we realized that we were going the right way, putting all our strength and emotion into our toys.
+                            <?php the_field('stoty_descr', 2)?>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -257,8 +253,6 @@
                     <div class="col-lg-6">
                         <div class="contacts__descr underlined">
                         We are located in Cape Town, metro "Victory Park", in the business center "Victory Park", second floor
-                            <br> <br>
-                            at 1 Vasilisa Kozhina St.
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -318,7 +312,7 @@
                                             </linearGradient>
                                             </defs>
                                         </svg>
-                                        <a href="tel:+797867834347">+337867834347</a>
+                                        <a href="tel:<?php the_field('phone', 2)?>"><?php the_field('phone', 2)?></a>
                                     </div>
                                 </div>
                                 <div class="contacts__phoneblock">
@@ -368,13 +362,12 @@
                                             </linearGradient>
                                             </defs>
                                         </svg>
-                                        <a href="tel:+797867834358">+337867834358</a>
-                                    </div>
+                                        <a href="tel:<?php the_field('phone_second', 2)?>"><?php the_field('phone_second', 2)?></a>                                    </div>
                                 </div>
                             </div>
                             <div class="contacts__mail">
                             Or email us at
-                                <a href="mailto:childhood@gmail.com">childhood@gmail.com</a>
+                                <a href="mailto:<?php the_field("mail", 2); ?>"><?php the_field("mail", 2); ?></a>
                             </div>
                         </div>
                     </div>

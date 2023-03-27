@@ -35,14 +35,14 @@
                             <div class="footer__contacts-item">
                                 <img src="<?php echo bloginfo("template_url");?>/assets/img/icons/svg/phone.svg" alt="phone" class="footer__contacts-logo">
                                 <div class="footer__contacts-tel">
-                                    <a href="tel:+337867834347">+337867834347</a>
-                                    <a href="tel:+337867834358">+337867834358</a>
+                                    <a href="tel:<?php the_field('phone', 2)?>"><?php the_field('phone', 2)?></a>
+                                    <a href="tel:<?php the_field('phone_second', 2)?>"><?php the_field('phone_second', 2)?></a>
                                 </div>
                             </div>
                             <div class="footer__contacts-item">
                                 <img src="<?php echo bloginfo("template_url");?>/assets/img/icons/svg/pointer.svg" alt="pointer" class="footer__contacts-logo">
-                                <address>ul. Vasilisa Kozhina, 1<br>
-                                South Africa Cape Town</address>
+                                <address><?php the_field('local', 2)?><br>
+                                <?php the_field('local_country', 2)?></address>
                             </div>
                         </div>
                     </div>
